@@ -74,30 +74,66 @@ export default function Home() {
       {/* Product Image  */}
 
       {/* Best Selling Block  */}
- <section className="bg-gradient-to-r from-purple-900 to-purple-400 py-6">
+      <section className="bg-gradient-to-r from-purple-900 to-purple-400 py-15">
+        <div className="container text-center mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-white font-bold text-2xl mb-4 leading-relaxed">বেস্ট সেলিং কটন থ্রি পিস<br /><span className="text-purple-300 font-bold bg-pink-100 text-2xl py-2 px-2 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4 mb-4">
+                <div className="bg-white text-purple-600 text-2xl">❄</div>
+                <span className="text-white text-xl">গরমের শান্তি</span>
+              </div>
+              <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 mb-4 gap-4">
+                <div className="bg-white text-purple-600 text-2xl">✓</div>
+                <span className="text-white text-xl">শরীরে র‍্যাশ হবে না, চুলকাবে না</span>
+              </div>
+              <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4">
+                <div className="bg-white text-purple-600 text-2xl">✦</div>
+                <span className="text-white text-xl">সারাদিন শরীরে দিবে ঠাণ্ডা অনুভূতি</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Best Selling Block  */}
+
+      {/* Special Features */}
+  <section className="bg-white py-10">
   <div className="container text-center mx-auto">
-    <div className="max-w-4xl mx-auto">
-      <h3 className="text-white font-bold text-2xl mb-4 leading-relaxed">বেস্ট সেলিং কটন থ্রি পিস<br /><span className="text-purple-300 font-bold bg-pink-100 py-2 px-2 my-3 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
-      <div className="max-w-4xl mx-auto">
-        <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4 mb-4">
-          <div className="bg-white text-purple-600 text-2xl">❄</div>
-          <span className="text-white text-xl">গরমের শান্তি</span>
-        </div>
-        <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 mb-4 gap-4">
-          <div className="bg-white text-purple-600 text-2xl">✓</div>
-          <span className="text-white text-xl">শরীরে র‍্যাশ হবে না, চুলকাবে না</span>
-        </div>
-        <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4">
-          <div className="bg-white text-purple-600 text-2xl">✦</div>
-          <span className="text-white text-xl">সারাদিন শরীরে দিবে ঠাণ্ডা অনুভূতি</span>
-        </div>
+    <div className="section-divider"><span className="text-purple-600">✦</span></div>
+    <h2 className="text-black text-4xl font-bold mb-6">এই ড্রেসটির <span className="text-purple-600">বিশেষত্ব</span> কি কি?</h2>
+    <p className="text-gray-600 mb-6">৬টি কারণে এই ড্রেস আপনার প্রিয় হবে</p>
+
+    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+      <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+        <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
+        <span className="text-black">ঠাণ্ডা কিংবা গরম যেকোন সিজনে সারাদিন পড়ে থাকা যায়</span>
+      </div>
+      <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+        <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
+        <span className="text-black">শরীরে কোন প্রকার র‍্যাশ হবে না অথবা শরীর চুলকাবে না</span>
+      </div>
+      <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+        <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
+        <span className="text-black">ড্রেসটি পড়ার পর গরম লাগবে না, স্বাভাবিক ঠান্ডা অনুভূতি ফীল হবে</span>
+      </div>
+      <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+        <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
+        <span className="text-black">যেকোন ধরণের অনুষ্ঠান বা প্রোগ্রামে পড়ে যেতে পারবেন</span>
+      </div>
+      <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+        <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
+        <span className="text-black">আলাদা করে ইনার পড়তে হবে না</span>
+      </div>
+      <div className="flex border border-gray-300 mb-4 rounded-md py-6 px-6 items-center hover:bg-green-100 gap-4">
+        <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
+        <span className="text-black">কাপড়ের পরিমাণ বেশি থাকায় যেকোন স্বাস্থ্যবান আপুরাও ড্রেস বানাতে পারবে</span>
       </div>
     </div>
   </div>
 </section>
 
-
-      {/* Best Selling Block  */}
+      {/* Special Features */}
 
 
 
