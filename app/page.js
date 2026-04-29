@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -64,7 +65,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto bg-white/90 text-center shadow-lg py-6 px-8 mt-4">
           <button
             type="button"
-            className="bg-purple-600 hover:bg-purple-500 text-white text-2xl font-bold py-5 px-16 rounded-md items-center rounded-xl shadow-lg"
+            className="text-white text-xl bg-purple-700 py-4 px-70 rounded-lg hover:bg-purple-800 shadow-lg"
           >
             এখনই অর্ডার করুন →
           </button>
@@ -130,6 +131,12 @@ export default function Home() {
         <span className="text-black">কাপড়ের পরিমাণ বেশি থাকায় যেকোন স্বাস্থ্যবান আপুরাও ড্রেস বানাতে পারবে</span>
       </div>
     </div>
+
+     <div className="max-w-4xl mx-auto mt-10">
+    {/* <Link href="#order" class="text-white text-xl bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">এখনই অর্ডার করুন →</Link> */}
+    <Link href="#order" className="text-white text-xl bg-purple-700 py-4 px-80 rounded-lg hover:bg-purple-800 shadow-lg">এখনই অর্ডার করুন →</Link>
+  </div>
+
   </div>
 </section>
 
