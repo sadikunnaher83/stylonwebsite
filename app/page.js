@@ -2,64 +2,117 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
+    <div>
+      {/* Top promo bar */}
+      <div className="w-full bg-gradient-to-r from-purple-700 to-purple-500 text-center py-4">
+        <h1 className="text-white font-bold">✨ ১০০% কালার গ্যারান্টি · ক্যাশ অন ডেলিভারি · সারা বাংলাদেশে ✨</h1>
+      </div>
+
+      {/* Top promo bar */}
+
+      {/* Header */}
+      <header className="w-full bg-white shadow-sm">
+        <div className="container py-6 px-30 flex items-center justify-between mx-auto">
+          <h1 className=" text-purple-600 text-2xl font-bold">STYLON</h1>
+          <button className="bg-purple-600 bg-gradient-to-r from-purple-500 to-pink-500 font-bold py-2 px-5 rounded-full flex items-center gap-4">
+            📞Call
+          </button>
+        </div>
+      </header>
+
+      {/* End Header */}
+
+
+      {/* Hero / Headline */}
+      <section className="w-full relative">
+        <span className="absolute top-0 left-0 text-4xl text-purple-600 py-10 px-10">✦</span>
+        <span className="absolute bottom-0 right-0 text-4xl text-purple-600 py-10 px-10">✦</span>
+        <div className="bg-gradient-to-r from-pink-100 to-purple-200 py-10 md:py-20">
+          <h1 className="text-4xl md:text-4xl font-bold text-center text-black pb-4 leading-normal">
+            গিফট এর জন্য মনকাড়া ড্রেস<br /><span className="text-purple-600">১০০% কালার গ্যারান্টি</span>ও যেকোন সিজনে সারাদিন<br /> ব্যবহারযোগ্য
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+          <div className="container bg-white py-4 px-8 text-center w-fit mx-auto rounded-lg shadow-lg border-purple-300 border">
+            <p className="text-black text-xl leading-relaxed">কাজের অফিস, সংসারের ব্যস্ততা, আর পড়াশোনার চাপ— সব চরিত্রেই মানিয়ে যায় এই<br /> ড্রেস। <span className="text-purple-600 font-bold">Working women, housewife, student</span>—সবার দিনের সঙ্গী আরাম,<br /> সৌন্দর্য আর নিজের মতো থাকার গল্প ✨</p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Hero / Headline */}
+
+      {/* Product Image  */}
+      <section className="bg-white">
+        <div className="bg-pink-100 text-center rounded-md py-10 px-20">
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+          <Image
+            className="bg-pink-300 rounded-md mx-auto"
+            src="/pa.jpeg"
+            alt="Picture of Dress"
+            width={500}
+            height={200}
+          />
         </div>
-      </main>
+        <div className="container relative mx-auto w-fit bg-white text-center border-2 border-dashed border-purple-300 py-6 px-8 mt-6 rounded-lg shadow-lg">
+          <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-white px-3">
+            <span className="text-purple-600 text-xl">💜</span>
+          </div>
+          <p className="text-black text-xl leading-relaxed w-fit py-4 px-6">আমরা শুধু আপনার সৌন্দর্যের কথাই চিন্তা করছি না, সাথে আপনার<span className="text-purple-600 font-bold text-xl"> আরামদায়ক বিষয়টাও</span> খেয়াল রাখছি। আপনার সেই আরাম<br /> আর সৌন্দর্যের কথা চিন্তা করেই হাজির হয়েছি <span className="text-purple-600 font-bold text-xl">100% সুতি কটন ড্রেস</span> নিয়ে।</p>
+
+        </div>
+        <div className="max-w-4xl mx-auto bg-white/90 text-center shadow-lg py-6 px-8 mt-4">
+          <button
+            type="button"
+            className="bg-purple-600 hover:bg-purple-500 text-white text-2xl font-bold py-5 px-16 rounded-md items-center rounded-xl shadow-lg"
+          >
+            এখনই অর্ডার করুন →
+          </button>
+        </div>
+
+      </section>
+      {/* Product Image  */}
+
+      {/* Best Selling Block  */}
+ <section className="bg-gradient-to-r from-purple-900 to-purple-400 py-6">
+  <div className="container text-center mx-auto">
+    <div className="max-w-4xl mx-auto">
+      <h3 className="text-white font-bold text-2xl mb-4 leading-relaxed">বেস্ট সেলিং কটন থ্রি পিস<br /><span className="text-purple-300 font-bold bg-pink-100 py-2 px-2 my-3 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
+      <div className="max-w-4xl mx-auto">
+        <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4 mb-4">
+          <div className="bg-white text-purple-600 text-2xl">❄</div>
+          <span className="text-white text-xl">গরমের শান্তি</span>
+        </div>
+        <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 mb-4 gap-4">
+          <div className="bg-white text-purple-600 text-2xl">✓</div>
+          <span className="text-white text-xl">শরীরে র‍্যাশ হবে না, চুলকাবে না</span>
+        </div>
+        <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4">
+          <div className="bg-white text-purple-600 text-2xl">✦</div>
+          <span className="text-white text-xl">সারাদিন শরীরে দিবে ঠাণ্ডা অনুভূতি</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      {/* Best Selling Block  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
